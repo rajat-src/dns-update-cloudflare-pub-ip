@@ -26,6 +26,7 @@ type IpAPI struct {
 func main() {
 
 	fmt.Println("Starting CloudFlare ip update service")
+	fmt.Println("Starting CloudFlare ip update service")
 	response, _ := http.Get("https://httpbin.org/ip")
 	var responseIPJson IpAPI
 	defer response.Body.Close()
